@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111111;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+            position:fixed;
+            width: 99%;
+            height: 80px;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 225, 255);
+            box-shadow: 7px 7px 8px rgb(0, 221, 255);
+        }
+
+        .box1 img{
+            height: 2.5vw;
+        }
+        .box2{
+            font-size: 1.6vw;
+            display: flex;
+            gap: 4vw;
+            /* color: #000; */
+        }
+        .box2 a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        #home{
+            position: absolute;
+            height: 100% ;
+            width: 99.4%;
+           display: flex;
+           justify-content: space-around;
+           align-items:center;
+           /* margin-top: 6vw; */
+            
+        }
+        .cir{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vw;
+            width: 30vw;
+            background-color: aqua;
+            border-radius: 50%;
+            /* opacity: 0.8; */
+            box-shadow: 8px 8px 8px rgb(3, 255, 255),-8px -8px 8px aqua;
+        }
+
+        .cir img{
+            height: 15vw;
+            /* box-shadow: 2px 2px 2px black; */
+
+        }
+        .p1{
+            line-height: 1.5vw;
+        }
+        .p1 span{
+            line-height: 1.8vw;
+            font-size: 3vw;
+            color: aqua;
+            text-shadow: 1px 1px 2px #ffffff;
+        }
+
+        .p1 p{
+            line-height: 1.8vw;
+            font-size: 1.5vw;
+            color: rgb(250, 255, 255);
+            /* text-shadow: 1px 1px 2px #ffffff; */
+        }
+
+        .l1{
+            font-size: 1vw;
+        }
+        
+        button{
+            /* margin-left: 1.3vw; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 0.5vw 1vw;
+            font-size: 1.3vw;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+
+        #about{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5% 0px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            /* background-color: rgb(0, 0, 0); */
+        }
+
+        .ani{
+            height: 35vw;
+            width: 35vw;
+            background-color: aqua;
+            border-radius: 50%;
+            animation: about .8s ease-in-out 0s infinite ;
+            animation-direction: alternate-reverse;
+            box-shadow: 8px 8px 8px rgb(3, 255, 255),-8px -8px 8px aqua;
+        }
+
+        @keyframes about{
+        from{
+            height: 34.8vw;
+            width: 34.8vw;
+            
+        }
+        to{
+            height: 35vw;
+            width: 35vw;
+            
+        }
+          
+        }
+        
+
+
+
+
+
+        @media (max-width:600px) {
+            nav{
+            flex-direction: column;
+            height: 60px;
+            background-color: aqua;
+        }
+
+        .box1 img{
+            height: 6vw;
+        }
+        .box2{
+            font-size: 3vw;
+            display: flex;
+            gap: 7vw;
+        }
+        .box2 a{
+            
+            color: #000;
+        }
+
+        .home{
+            flex-direction: column;
+            
+        }
+        .cir{
+            height: 60vw;
+            width: 60vw;
+            background-color: aqua;
+            border-radius: 50%;
+            /* opacity: 0.8; */
+            box-shadow: 8px 8px 8px aqua,-8px -8px 8px aqua;
+        }
+
+        .cir img{
+            height: 30vw;
+
+        }
+        .p1{
+            line-height: 2vw;
+        }
+        .p1 span{
+            line-height: 2.3vw;
+            font-size: 6vw;
+          
+        }
+
+        .p1 p{
+            line-height: 4vw;
+            font-size: 3vw;
+            
+        }
+
+        .l1{
+            font-size: 2.3vw;
+        }
+        
+        button{
+            
+            padding: 2vw 3vw;
+            font-size: 3vw;
+            
+            border-radius: 6px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box1">
+            <img src="LFW.png" alt="AK">
+        </div>
+        <div class="box2">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="">SHOP</a>
+        </div>
+    </nav>
+
+    <div id="home">
+        <div class="p1">
+           <span>AK Perfume</span>
+           <p>Smell like a man.</p>
+           <p class="l1">Our perfumes are made with the 
+            <br>finest natural ingredients, and they are 
+            <br>designed to evoke a sense of luxury and sophistication.</p>
+            <button>SHOP</button>
+        </div>
+        <div class="p2">
+           <div class="cir">
+            <img src="Perfume_box-removebg-preview.png" alt="">
+           </div>
+        </div>
+    </div>
+    <br>
+    <div id="about">
+        <div class="ani"></div>
+    </div>
+</body>
+</html>
