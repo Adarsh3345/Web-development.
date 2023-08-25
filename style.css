@@ -1,0 +1,283 @@
+body{
+    background-color: #111111;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position:fixed;
+    width: 99%;
+    height: 12%;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 225, 255);
+    box-shadow: 7px 7px 8px rgb(0, 221, 255);
+}
+
+.box1 img{
+    height: 2.5vw;
+}
+
+input{
+    width: 29vw;
+    height: 2vw;
+    border-radius: 19px;
+    border: 2px solid  rgb(0, 221, 255);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+.box2{
+    font-size: 1.6vw;
+    display: flex;
+    gap: 4vw;
+    /* color: #000; */
+}
+.box2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+#home{
+    background-color: #111111;
+    position: absolute;
+    height: calc(100% - 12%) ;
+    width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items:center;
+   /* margin-top: 6vw; */
+    
+}
+.cir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 30vw;
+    background-color: aqua;
+    border-radius: 50%;
+    /* opacity: 0.8; */
+    box-shadow: 8px 8px 8px rgb(3, 255, 255),-8px -8px 8px aqua;
+}
+
+.cir img{
+    height: 15vw;
+    /* box-shadow: 2px 2px 2px black; */
+
+}
+.p1{
+    line-height: 1.5vw;
+}
+.p1 span{
+    line-height: 1.8vw;
+    font-size: 3vw;
+    color: aqua;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.p1 p{
+    line-height: 1.8vw;
+    font-size: 1.5vw;
+    color: rgb(250, 255, 255);
+    /* text-shadow: 1px 1px 2px #ffffff; */
+}
+
+.l1{
+    font-size: 1vw;
+}
+
+.button{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5vw 1vw;
+    font-size: 1.3vw;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+button{
+    /* margin-left: 1.8vw; */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5vw 8vw;
+    font-size: 1.3vw;
+    background-color: aqua;
+    border-radius: 5vw;
+}
+#about{
+   
+    margin: calc(100% - 50%) 0px;
+    position: absolute;
+
+    /* height: ; */
+    /* width: 100%; */
+    /* background-color: rgb(0, 0, 0); */
+}
+
+
+#about img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
+    /* margin-top: 7vw; */
+}
+
+
+#about .sp{
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8vw;
+}
+#about .buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: #e31d1d; */
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1vw;
+    color: rgb(255, 255, 255);
+    height: 35vw;
+    padding-bottom: 1vw;
+    margin: 2vw;
+    /* padding: 5vw; */
+    /* margin-top: 4vw; */
+}
+
+.buy span{
+    /* font-size: vw; */
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:820px) {
+    nav{
+    
+    flex-direction: column;
+    height: 20vw;
+    background-color: aqua;
+    column-gap: 0vw;
+}
+
+.box1 img{
+    height: 10vw;
+}
+
+input{
+  display: none;
+}
+
+.box2{
+    font-size: 6vw;
+    display: flex;
+    gap: 15vw;
+}
+.box2 a{
+    margin-bottom: 2vw;
+    color: #000;
+}
+
+#home{
+    flex-direction: column;
+    /* height: calc(100% - 100px); */
+    height: calc(100% + 20.5vw);
+    row-gap: 64px;
+    justify-content: center;
+}
+.cir{
+    height: 60vw;
+    width: 60vw;
+    background-color: aqua;
+    border-radius: 50%;
+    /* opacity: 0.8; */
+    box-shadow: 8px 8px 8px aqua,-8px -8px 8px aqua;
+    
+}
+
+.cir img{
+    height: 30vw;
+
+ }
+.p1{
+    line-height: 3vw;
+    text-align: center;
+}
+.p1 span{
+    line-height: 3.5vw;
+    font-size: 6vw;
+  
+}
+
+.p1 p{
+    line-height: 5vw;
+    font-size: 4vw;
+    
+}
+
+.l1{
+    font-size: 3vw;
+}
+
+.button{
+    
+    padding: 3vw 4vw;
+    font-size: 4vw;
+    
+    border-radius: 10px;
+}
+
+#about{
+   /* position: fixed; */
+margin-top: 180%;
+}
+
+
+#about .sp{
+    justify-content:space-around;
+    row-gap: 4vh;
+
+}
+#about .buy{
+    width: 46%;
+    margin: 0px 0px;
+    height: 37vh;
+    margin: 0vh;
+    /* line-height: 1.5vh; */
+    /* row-gap: 0.1vw; */
+}
+
+.buy p{
+    padding: 0vw;
+    margin: 0.5vw;
+}
+
+.buy button{
+    padding: .5svw 10vw;
+    font-size: 3vw;
+    margin: 2vw;
+}
+
+}
